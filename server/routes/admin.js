@@ -1,5 +1,5 @@
 const adminRouter = require('express').Router();
-const {AdminModel} = require('../db');
+const {AdminModel} = require('../../db');
 
 adminRouter.post('/signup', (req, res)=>{
     const {email, password, firstName, lastName} = req.body;
